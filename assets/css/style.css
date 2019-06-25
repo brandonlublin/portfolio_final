@@ -6,10 +6,10 @@
     position: relative;
 }
 .parallax-container {
-    height: 60vh;
-    width: 100%;
+    height: 80vh;
+    /* width: 100%; */
     display: flex;
-    position: relative;
+    /* position: relative; */
 }
 .title {
     height: 30vh;
@@ -17,6 +17,14 @@
 .menuPic {
     height: 200px;
     width: 300px;
+}
+section {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+section.visible { 
+    opacity: 1;
 }
 #name-header {
     position: absolute;
