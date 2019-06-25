@@ -1,0 +1,99 @@
+.parallax {
+    height: 100vh;
+    opacity: 0.9;
+    /* display: flex; */
+    width: 100%;
+    position: relative;
+}
+.parallax-container {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.title {
+    height: 30vh;
+}
+.menuPic {
+    height: 200px;
+    width: 300px;
+}
+#name-header {
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.header {
+    z-index: 1000;
+    text-decoration-color: black;
+    text-shadow: black 5px 5px;
+    font-weight: 900;
+    opacity: 100;
+}
+.mainImg {
+    height: 100vh;
+    color: black;
+    font-weight: bolder;
+    position: relative;
+}
+.carousel-item img {
+    width: 600px;
+    height: 200px;
+}
+.menu {
+    position: absolute;
+    background: transparent;
+    z-index: 5000;
+    color: white;
+}
+.email {
+    margin-top: 60px;
+}
+.name {
+    margin-top: 60px;
+}
+p {
+    margin: 0;
+}
+.user-view {
+    height: 200px;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+}
+.hero-header {
+    margin: auto;
+    margin-top: 15%;
+    text-align: center;
+    width: 55vw;
+}
+body, .carousel {
+    overflow: auto;
+}
+.header {
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.logoLink {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+.logoSet {
+    text-align: center;
+}
+.clouds-image {
+    height: 30vh;
+}
+.aboutMe {
+    font-size: 18px;
+}
+@media only screen and (max-width: 400px) {
+    img {
+        width: 100vw;
+    }
+}
