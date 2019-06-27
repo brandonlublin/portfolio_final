@@ -24,7 +24,5 @@ $(window).on('load', function () {
         $('h5').removeClass('col s6 flow-text');
     }
 });
-$(window).on('resize', function () {
-    $('h5').removeClass('col s6 flow-text', $(window).width() < 400);
-});
+
 

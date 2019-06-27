@@ -11,6 +11,9 @@
     display: flex;
     /* position: relative; */
 }
+#slide-out {
+    z-index: 100000;
+}
 .title {
     height: 30vh;
 }
@@ -136,5 +139,10 @@ body, .carousel {
     }
     .projectTitle {
         margin-top: 20px;
+    }
+    .parallax-container {
+        width: 100vw;
+        height: 60vh;
+        overflow: hidden;
     }
 }
