@@ -1,7 +1,3 @@
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('.carousel');
-//     var instances = M.Carousel.init(elems, options);
-// });
 $(document).ready(function () {
     $('.parallax').parallax();
     $('.sidenav').sidenav();
@@ -22,3 +18,13 @@ $(document).on('scroll', function () {
         }
     }
 });
+$(window).on('load', function () {
+    if ($(window).width() < 400) {
+        $('img').removeClass('col s6 flow-text');
+        $('h5').removeClass('col s6 flow-text');
+    }
+});
+$(window).on('resize', function () {
+    $('h5').removeClass('col s6 flow-text', $(window).width() < 400);
+});
+
