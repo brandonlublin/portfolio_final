@@ -17,6 +17,19 @@
 img {
     height: 300px;
 }
+.card-content {
+    text-align: center;
+}
+.card-title {
+    text-align: center;
+    margin-top: 20px;
+}
+.languageIcon {
+    font-size: 80px;
+    margin: 15px;
+    margin-right: 100px;
+    justify-content: center;
+}
 .title {
     height: 30vh;
 }
@@ -140,12 +153,25 @@ body, .carousel {
         margin: auto;
         /* overflow: hidden; */
     }
+    img.activator {
+        height: 200px;
+    }
+    .card-content {
+        padding: 0;
+    }
+    .row .col {
+        padding: 0;
+    }
     .projectTitle {
         margin-top: 20px;
     }
     .parallax-container {
         width: 100vw;
-        height: 60vh;
+        height: 100vh;
         overflow: hidden;
+    }
+    .languageIcon {
+        font-size: 30px;
+        margin: 0;
     }
 }
