@@ -17,6 +17,10 @@
 img {
     height: 300px;
 }
+.color {
+    background-color: #5D737E;
+    color: white;
+}
 .card-content {
     text-align: center;
 }
@@ -51,12 +55,34 @@ section.visible {
     margin: auto;
     font-family: 'Cinzel Decorative', cursive;
 }
-.header {
+.headerText {
     z-index: 1000;
-    text-decoration-color: black;
-    text-shadow: black 5px 5px;
+    color: white;
+    /* text-decoration-color: black; */
+    text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em rgb(48, 41, 41),
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
     font-weight: 900;
-    opacity: 100;
+    opacity: 0.9;
+}
+.linkDemo {
+    position: absolute;
+    margin: auto;
+    left: 33%;
+    bottom: 2%;
+}
+.email {
+    width: 80%;
+    margin: auto;
+}
+.row {
+    margin-bottom: 0;
 }
 .mainImg {
     height: 100vh;
@@ -67,6 +93,9 @@ section.visible {
 .carousel-item img {
     width: 600px;
     height: 200px;
+}
+.page-footer {
+    background-color: #BFDBF7;
 }
 .menu {
     position: absolute;
@@ -120,6 +149,7 @@ body, .carousel {
     width: 50px;
     height: 50px;
     margin: auto;
+    color: white;
 }
 .logoSet {
     text-align: center;
@@ -155,9 +185,15 @@ body, .carousel {
     }
     img.activator {
         height: 200px;
+        color: white;
+    }
+    div {
+        background-color: #5D737E;
+        color: #5D737E;
     }
     .card-content {
         padding: 0;
+
     }
     .row .col {
         padding: 0;
