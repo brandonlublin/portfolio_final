@@ -6,11 +6,11 @@
     position: relative;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arvo', serif;
+    font-family: 'avenir';
     text-transform: uppercase;
 }
 .parallax-container {
-    height: 80vh;
+    height: 100vh;
     /* width: 100%; */
     display: flex;
     /* position: relative; */
@@ -59,21 +59,37 @@ section.visible {
     margin: auto;
 }
 
-.headerText {
+.headerText1 {
     z-index: 1000;
     color: white;
-    /* text-decoration-color: black; */
-    text-shadow:
-        0.05em 0 black,
-        0 0.05em black,
-        -0.05em 0 black,
-        0 -0.05em black,
-        -0.05em -0.05em rgb(48, 41, 41),
-        -0.05em 0.05em black,
-        0.05em -0.05em black,
-        0.05em 0.05em black;
-    font-weight: 900;
-    opacity: 0.9;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'avenir', medium;
+    /* text-shadow: 0 2px 5px #000; */
+    font-size: 70px;
+}
+.headerText2 {
+    /* z-index: 1000; */
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'avenir';
+    /* text-shadow: 0 2px 5px #000; */
+    font-size: 50px;
+}
+.content:before {
+    position: absolute;
+    content: '';
+    width: 60%;
+    height: 125px;
+    top: -50px;
+    left: 0;
+    background: #fff;
+    transform: skewY(10deg);
 }
 .linkDemo {
     position: absolute;
@@ -93,6 +109,7 @@ section.visible {
     color: black;
     font-weight: bolder;
     position: relative;
+    margin-bottom: 150px;
 }
 .carousel-item img {
     width: 600px;
@@ -163,9 +180,18 @@ body, .carousel {
 }
 .aboutMe {
     font-size: 18px;
-    font-family: 'Domine', serif;
+    font-family: 'avenir';
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 800px) {
+    .headerText1 {
+        font-size: 60px;
+    }
+    .headerText2 {
+        font-size: 36px;
+        top: 70%;
+    }
+}
+@media only screen and (max-width: 460px) {
     .mainImg {
         height: 100vh;
         width: 100vw;
@@ -176,6 +202,14 @@ body, .carousel {
         z-index: 10000;
         color: White;
     }
+    .headerText1 {
+        top: 25%;
+        font-size: 40px;
+    }
+    .headerText2 {
+        font-size: 26px;
+        top: 70%;
+    }
     h1 {
         font-size: 36px;
         color: black;
@@ -183,15 +217,10 @@ body, .carousel {
     h4 {
         font-size: 24px;
     }
-    img {
-        width: 300px;
-        margin: auto;
-        /* overflow: hidden; */
-    }
     img.activator {
         height: 200px;
         color: white;
-    }
+    } */
     div {
         background-color: #5D737E;
         color: #5D737E;
@@ -200,8 +229,12 @@ body, .carousel {
         padding: 0;
 
     }
+    .card {
+        margin: 2rem 0 1rem 0;
+    }
     .row .col {
         padding: 0;
+        margin-top: 200px;
     }
     .projectTitle {
         margin-top: 20px;
