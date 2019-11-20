@@ -68,7 +68,8 @@ section.visible {
     transform: translate(-50%,-50%);
     font-family: 'avenir', medium;
     /* text-shadow: 0 2px 5px #000; */
-    font-size: 70px;
+    font-size: 5vw, 5vh;
+    overflow: hidden;
 }
 .headerText2 {
     /* z-index: 1000; */
@@ -79,7 +80,8 @@ section.visible {
     transform: translate(-50%,-50%);
     font-family: 'avenir';
     /* text-shadow: 0 2px 5px #000; */
-    font-size: 50px;
+    font-size: 3vw, 3vh;
+    overflow: hidden;
 }
 .content:before {
     position: absolute;
@@ -117,6 +119,10 @@ section.visible {
 }
 .page-footer {
     background-color: #BFDBF7;
+    bottom: 0;
+    width: 100vw;
+    overflow: auto;
+    margin-top: 70px;
 }
 .menu {
     position: absolute;
@@ -181,15 +187,7 @@ body, .carousel {
 .aboutMe {
     font-size: 18px;
     font-family: 'avenir';
-}
-@media only screen and (max-width: 800px) {
-    .headerText1 {
-        font-size: 60px;
-    }
-    .headerText2 {
-        font-size: 36px;
-        top: 70%;
-    }
+    margin-bottom: 50px;
 }
 @media only screen and (max-width: 460px) {
     .mainImg {
@@ -201,14 +199,6 @@ body, .carousel {
         margin-top: 100px;
         z-index: 10000;
         color: White;
-    }
-    .headerText1 {
-        top: 25%;
-        font-size: 40px;
-    }
-    .headerText2 {
-        font-size: 26px;
-        top: 70%;
     }
     h1 {
         font-size: 36px;
