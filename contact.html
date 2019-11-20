@@ -12,7 +12,9 @@
 
     <!-- Compiled and minified JavaScript -->
 
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville|Poppins|family=Domine&display=swap|Arvo:400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville|Poppins|family=Domine&display=swap|Arvo:400&display=swap"
+        rel="stylesheet">
     <link rel='stylesheet' href='assets/css/style.css'>
     </link>
     <script src="https://code.jquery.com/jquery-3.4.0.js"
@@ -20,6 +22,7 @@
     <script src='assets/javascript/app.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
+
 
 <body>
     <ul id="slide-out" class="sidenav">
@@ -34,7 +37,7 @@
             <div class="divider"></div>
         </li>
         <li><a class="waves-effect" href="/index.html">Home</a></li>
-        <li><a class="waves-effect" href="/contact.html">Contact Me</a></li>
+        <li><a class="waves-effect" href="/about.html">About Me</a></li>
         <br><br>
         <div class='logoSet'>
             <a href='https://github.com/brandonlublin'><img class='logoLink' src="assets/images/github.svg"
@@ -47,27 +50,43 @@
         </div>
     </ul>
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="medium material-icons menuAbout">menu</i></a>
-    <h3 class='center touchText'>A Little Bit About Me</h3>
-    <div class="row">
-        <div class="container">
-            <hr>
-        </div>
-    </div>        
-    <div class="row container">
-        <p class='aboutMe'>My name is Brandon Lublin and I am an aspiring Full Stack developer! I got my first exposure in coding while in highschool. My highschool offered a 'Computer Basics and Web Design' course that taught me basic HTML principles and dabbled in CSS, but this was way back in 2008 so things have changed dramatically since then.</p>
-
-        <p class='aboutMe'>I went to college at Boise State University where I studied History in hopes of getting into Law School but quickly determined that I wasn't cut out for the mass amounts of paperwork that comes with being a lawyer. After a few years away from school, and with my current position integrating a few skills that I thought were fairly similar to coding, I thought what better way to go back to school and finish what I started while trying to jump into a new career that I have a genuine interest in!?</p>
-
-        <p class='aboutMe'>Anything that involves the outdoors is my lifeblood. In the summer, I love to hike, swim, travel, and go to sporting events, and during the winter, you'll have a tough time finding me anywhere else than the mountain. Snowboarding is probably my biggest hobby and there isn't many things I'd rather do than freeze my face off while cruising through some fluffy snow!!</p>
+    <h3 class='center touchText'>Want to get in touch?</h3>
+    <br>
+    <div class="row contactForm">
+        <form class="container" method="POST" action="https://formspree.io/brandonlublin26@gmail.com">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="message" type="text" class="validate">
+                    <label for="message">Message</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <button id='submitButton' class='waves-effect waves-light btn-small waves-light' type="submit">Send
+                Email</button>
+        </form>
     </div>
-
     <footer class="page-footer teal lighten-4">
         <div class="container">
             <div class="row">
-                <div class="col l8 offset-l2 s12">
+                <div class="col">
                     <div class='logoSet'>
-                        <a href='https://github.com/brandonlublin'><img class='logoLink'
-                                src="assets/images/github.svg" alt="github"></a>
+                        <a href='https://github.com/brandonlublin'><img class='logoLink' src="assets/images/github.svg"
+                                alt="github"></a>
                         <a href='https://www.linkedin.com/in/brandon-lublin-78a550a8/'><img class='logoLink'
                                 src="assets/images/linkedin.svg" alt="linkedin"></a>
 
@@ -79,9 +98,8 @@
             </div>
         </div>
         <div class="footer-copyright">
-            <div class='container'>© 2019 Copyright Brandon Lublin<a href='https://github.com/brandonlublin/portfolio_final'> Source</a></div>
+            <div class='container'>© 2019 Copyright Brandon Lublin<a
+                    href='https://github.com/brandonlublin/portfolio_final'> Source</a></div>
         </div>
     </footer>
 </body>
-
-</html>
