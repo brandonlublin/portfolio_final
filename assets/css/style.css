@@ -1,9 +1,18 @@
+body, html { /*body and html have to be 100% to push header down */
+    height:100%;
+    width: 100%;
+}
 .parallax {
     height: 100vh;
     opacity: 0.9;
     /* display: flex; */
     width: 100%;
     position: relative;
+}
+body { /* all content must be wrapped... #wrapper is my id.  Position relative IMPORTANT */
+    position: relative;
+    height: auto;
+    min-height: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'avenir';
@@ -41,6 +50,10 @@ img {
 .title {
     height: 30vh;
 }
+.blurbText {
+    text-align: center;
+    padding-bottom: 30px;
+}
 .menuPic {
     height: 200px; 
     width: 300px;
@@ -70,7 +83,7 @@ section.visible {
     transform: translate(-50%,-50%);
     font-family: 'avenir', medium;
     /* text-shadow: 0 2px 5px #000; */
-    font-size: 5vw, 5vh;
+    font-size: 5vw;
     overflow: hidden;
 }
 .headerText2 {
@@ -82,7 +95,7 @@ section.visible {
     transform: translate(-50%,-50%);
     font-family: 'avenir';
     /* text-shadow: 0 2px 5px #000; */
-    font-size: 3vw, 3vh;
+    font-size: 3vw;
     overflow: hidden;
 }
 .content:before {
@@ -115,16 +128,13 @@ section.visible {
     position: relative;
     margin-bottom: 150px;
 }
+#experience {
+    text-align: center;
+    padding-bottom: 40px;
+}
 .carousel-item img {
     width: 600px;
     height: 200px;
-}
-.page-footer {
-    background-color: #BFDBF7;
-    bottom: 0;
-    width: 100vw;
-    overflow: auto;
-    margin-top: 70px;
 }
 .menu {
     position: absolute;
@@ -212,6 +222,16 @@ body, .carousel {
         font-size: 28px;
         margin: auto;
     }
+    .headerText1 {
+        font-size: 30px;
+    }
+    .headerText2 {
+        font-size: 20px;
+    }
+    #experience {
+        font-size: 30px;
+        padding: 0;
+    }
     .header {
         text-shadow: black 2px 2px;
         margin-top: 100px;
@@ -235,14 +255,13 @@ body, .carousel {
     }
     .card-content {
         padding: 0;
-
+        /* margin-bottom: 200px; */
     }
     .card {
         margin: 2rem 0 1rem 0;
     }
     .row .col {
         padding: 0;
-        margin-top: 200px;
     }
     .projectTitle {
         margin-top: 20px;
